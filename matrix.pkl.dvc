@@ -1,11 +1,16 @@
-cmd: ' python featurization.py data.tsv matrix.pkl'
+cmd: ' python featurization.py data.tsv matrix.pkl data-test.tsv matrix-test.pkl'
 deps:
 - md5: 0b0f57fc9bc21eaa31b964fd402653bc
   path: featurization.py
 - md5: 58245acfdc65b519c44e37f7cce12931
   path: data.tsv
-md5: 35814a16f49f99dc8d861a40a90155b3
+- md5: 9d603888ec04a6e75a560df8678317fb
+  path: data-test.tsv
+md5: d3d44a7938096c16062fe1f9f912fd92
 outs:
 - cache: true
   md5: a3473d0b380d13780a64f0095bcccc0d
   path: matrix.pkl
+- cache: true
+  md5: 18c0d30bac18c8024d64d005ff9a679e
+  path: matrix-test.pkl
